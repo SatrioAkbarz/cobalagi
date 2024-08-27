@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unggah File</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Unggah File</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="filesToUpload[]" id="fileToUpload" multiple>
+            <input type="submit" value="Unggah File" name="submit">
+        </form>
+
+        <h2>Cari File yang Diunggah</h2>
+        <form action="search.php" method="post">
+            <input type="text" name="searchQuery" placeholder="Cari file...">
+            <input type="submit" value="Cari" name="search">
+        </form>
+
+        <!-- Tambahkan tombol untuk melihat daftar file -->
+        <a href="list_files.php" class="button">Lihat Daftar File</a>
+    </div>
+</body>
+</html>
